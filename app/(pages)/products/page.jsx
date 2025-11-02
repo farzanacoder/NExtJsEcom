@@ -4,7 +4,6 @@ import Flex from "../../components/Flex";
 import CartItem from "../../components/CartItem";
 
 
-
 async function getProducts(){
   const res = await fetch('https://dummyjson.com/products' ,
           {next: {revalidate: 60}}
@@ -26,10 +25,10 @@ console.log(products);
 
 
         <Flex className='flex-wrap gap-2'>
-           {products.map((prdct) => (
-          <CartItem  key={prdct.id}  data={prdct} />
-      
-      ))}
+           {
+           products.map((prdct) => (
+          <CartItem  key={prdct.id}  data={prdct} /> ))
+           }
 
 
 
