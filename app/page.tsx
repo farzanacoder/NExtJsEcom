@@ -5,7 +5,7 @@ import Banner from "./layouts/Banner";
 const page = () => {
   return (
     <div>
-              <Banner/>
+       <Banner/>
     </div>
   )
 }

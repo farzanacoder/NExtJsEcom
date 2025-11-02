@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Navber = () => {
+const ProductDetails = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const Navber = () => {
   )
 }
 
-export default Navber
+export default ProductDetails

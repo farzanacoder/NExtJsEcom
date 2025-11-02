@@ -9,4 +9,11 @@
 @theme{
   --color-primary: #28290;
   --color-secondary: #353535;
+
+   --max-width-container: 95%;
+    --color-red: #FF5252;
+    --color-gray: #dfdfdf;
+    --color-gray1: #e5e7eb;
+    --font-mont: "Montserrat", sans-serif;
+    --color-body: #fcfcfc;
 }

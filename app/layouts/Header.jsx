@@ -12,7 +12,7 @@ const Header = () => {
                         <Image src={'/logo.png'} width={243} height={73} alt='logo' />
             </Link>
 
-            <Search />
+            <Search />  
 
 
             <div className='flex items-center gap-5'>
