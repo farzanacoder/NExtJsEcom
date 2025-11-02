@@ -2,10 +2,11 @@ import React from "react";
 import Flex from "../components/Flex";
 import { IoStar } from "react-icons/io5";
 import Image from "next/image";
+import Link from "next/link";
 
 const CartItem = ({ data, className }) => {
   return (
-    <div className="relative overflow-hidden group rounded-md w-[170px] md:w-[205px] h-[390px] shadow-sm border border-gray-300">
+    <Link href={`/products/${data.id}`} className="relative overflow-hidden group rounded-md w-[170px] md:w-[205px] h-[390px] shadow-sm border border-gray-300">
       <Image
         src={data.thumbnail || "/fallback.png"}
         alt='img'
@@ -46,7 +47,7 @@ const CartItem = ({ data, className }) => {
           add to card
         </button>
       </Flex>
-    </div>
+    </Link>
   );
 };
 

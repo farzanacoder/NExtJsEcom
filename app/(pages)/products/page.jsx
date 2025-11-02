@@ -4,10 +4,10 @@ import Flex from "../../components/Flex";
 import CartItem from "../../components/CartItem";
 
 
+
 async function getProducts(){
   const res = await fetch('https://dummyjson.com/products' ,
           {next: {revalidate: 60}}
-    
   )
   return res.json()
 }
